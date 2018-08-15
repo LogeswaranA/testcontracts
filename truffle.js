@@ -6,8 +6,8 @@ module.exports = {
     ropsten:{
       provider : function(){
         return new HDWalletProvider(
-         `novel loop surround depth trade fire aerobic same dumb student market number`,
-          `https://ropsten.infura.io/v3/f5c7e5dd1dc043a483c77cfcd69683a5`
+         process.env.MNEMONIC,
+          `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`
         );
       },
      gas:270000,
