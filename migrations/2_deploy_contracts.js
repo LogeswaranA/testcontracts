@@ -1,5 +1,7 @@
 var SimpleStorage = artifacts.require("./SimpleStorage.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(SimpleStorage);
+  deployer.then(async() =>{
+    await deployer.deploy(SimpleStorage);
+  });
 };
